@@ -43,6 +43,18 @@ public class EjerciciosBasicosJava {
         //en cualquier otro valor 
         return 2;
     }
+    /**
+     * 
+     * @param numero para evaluar si es o no vanidoso
+     * es vanidoso si es multiplo de 11 o multiplo + 1
+     * @return 
+     */
+    public boolean muyVanidoso(int numero){
+        if (numero % 11 <= 1){//si ladivisión da resto cero o uno
+            return true;
+        }
+        return false;
+    }
     
     /**
      * @param args the command line arguments
@@ -58,6 +70,11 @@ public class EjerciciosBasicosJava {
         System.out.println( ejercicio.multa(60, false));
         System.out.println( ejercicio.multa(65, false));
         System.out.println( ejercicio.multa(65, true));
+
+        System.out.println("Ejercicio 03 muyVanidoso:");
+        System.out.println(ejercicio.muyVanidoso(22));
+        System.out.println(ejercicio.muyVanidoso(23));
+        System.out.println(ejercicio.muyVanidoso(24));
 
     }
 
