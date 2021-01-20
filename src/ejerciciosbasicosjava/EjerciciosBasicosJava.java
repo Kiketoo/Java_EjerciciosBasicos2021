@@ -55,7 +55,21 @@ public class EjerciciosBasicosJava {
         }
         return false;
     }
+    public boolean contesta (boolean matinal, boolean madre, boolean dormido){
+    if (matinal){
+        if(madre){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    if (dormido){
+        return false;
+    }
     
+    return true;
+    }
     /**
      * @param args the command line arguments
      */
@@ -75,6 +89,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.muyVanidoso(22));
         System.out.println(ejercicio.muyVanidoso(23));
         System.out.println(ejercicio.muyVanidoso(24));
+        
+         System.out.println("Ejercicio 04 contesta:");
+        System.out.println(ejercicio.contesta(false,false,false));
+        System.out.println(ejercicio.contesta(false,false,true));
+        System.out.println(ejercicio.contesta(true,false,false));
 
     }
 
